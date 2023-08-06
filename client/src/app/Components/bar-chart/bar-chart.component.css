@@ -1,0 +1,11 @@
+.chart {
+    width: 100%;
+    height: 100%;
+    position: relative;  /* Ensuring the div takes the full space of its parent. */
+}
+
+echarts {
+    width: 100%;
+    height: 100%;
+    display: block;  /* Ensuring there are no additional margins or spacing. */
+}
