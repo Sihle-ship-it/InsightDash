@@ -1,12 +1,51 @@
-<div class="section-container">
-    <div class="cards">
-        <div class="card-deck">
-            <div class="card mb-3 shadow card-theme">
+<div class="container section-container">
+    <div class="row mb-3">
+        <!-- First Card -->
+        <div class="col-md-4">
+            <div class="card shadow card-theme custom-card-height">
                 <div class="card-header card-header-theme">
                     <h5>Daily Orders</h5>
                 </div>
                 <div class="card-body">
                     <app-bar-chart></app-bar-chart>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Card -->
+        <div class="col-md-4">
+            <div class="card shadow card-theme custom-card-height">
+                <div class="card-header card-header-theme">
+                    <h5>Orders by Customer</h5>
+                </div>
+                <div class="card-body">
+                    <app-pie-chart></app-pie-chart>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Card -->
+        <div class="col-md-4">
+            <div class="card shadow card-theme custom-card-height">
+                <div class="card-header card-header-theme">
+                    <h5>Orders by State</h5>
+                </div>
+                <div class="card-body">
+                    <app-pie-chart></app-pie-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Large Card Below -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card shadow card-theme custom-card-height">
+                <div class="card-header card-header-theme">
+                    <h5>Large Chart</h5>
+                </div>
+                <div class="card-body">
+                    <app-pie-chart></app-pie-chart>
                 </div>
             </div>
         </div>

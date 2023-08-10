@@ -1,0 +1,11 @@
+.echarts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* or any specific height you want */
+}
+
+[echarts] {
+    width: 80%;  /* or a specific px/em value, e.g., 300px */
+    height: 80%; /* or a specific px/em value, e.g., 300px */
+}
