@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EChartsOption } from 'echarts';
+
 
 @Component({
   selector: 'app-pie-chart',
@@ -17,6 +17,8 @@ export class PieChartComponent implements OnInit {
 
   displayChart() {
     this.usersChartOptions = {
+      color: ['#e9e85c', '#3398DB', '#FF7F7F'],
+      animation: true,
       tooltip: {
         trigger: 'item',
         confine: true
@@ -27,7 +29,7 @@ export class PieChartComponent implements OnInit {
       },
       series: [
         {
-          name: 'User Typle',
+          name: 'Orders',
           type: 'pie',
           radius: ['40%', '60%'],
           avoidLabelOverlap: false,
@@ -41,15 +43,15 @@ export class PieChartComponent implements OnInit {
           data: [
             {
               value: 335,
-              name: 'Direct Visit',
+              name: 'XYZ Logistics',
             },
             {
               value: 234,
-              name: 'Union Ad',
+              name: 'Main st Bakery'
             },
             {
               value: 1548,
-              name: 'Search Engine',
+              name: 'Acme Hosting',
             },
           ],
         },

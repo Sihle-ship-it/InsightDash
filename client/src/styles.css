@@ -40,6 +40,13 @@ a:hover{
 .custom-card-height {
     max-height: 320px; /* Adjust this value based on your preference */
     overflow: hidden; /* To ensure content that exceeds the card is hidden */
+   
+}
+
+.custom-card-height-large {
+    height: 400px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
 }
 
 .card-header-theme{
