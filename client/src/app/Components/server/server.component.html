@@ -1,0 +1,19 @@
+<div
+  class="card shadow custom-card-height d-flex flex-column justify-content-center"
+  [ngStyle]="{ 'background-color': color }"
+>
+  <div class="card-header card-header-theme name text-center">
+    {{ serverInput?.name }}
+  </div>
+  <div class="card-body text-center Status">
+    {{ serverInput?.isOnline }}
+  </div>
+  <div class="px-3">
+    <button
+      class="btn btn-light action w-100"
+      (click)="toggleStatus(serverInput?.isOnline)"
+    >
+      Toggle Status
+    </button>
+  </div>
+</div>
