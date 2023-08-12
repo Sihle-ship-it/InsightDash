@@ -14,12 +14,14 @@ export class BarChartComponent implements OnInit {
   constructor(){}
 
   ngOnInit(): void {
-    this.displayData()
+    this.displayChart()
   }
 
-displayData(){
+displayChart(){
   this.initOpts = {
-    renderer: 'svg'
+    renderer: 'svg',
+    width: 'auto',
+    height: 250
   };
 
   this.options = {
